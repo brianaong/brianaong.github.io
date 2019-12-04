@@ -1,0 +1,274 @@
+/* header icons */
+#header{
+  position: fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  z-index:9;
+}
+
+.icon-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 35px;
+  opacity: 0.5;
+  padding: 10px;
+}
+
+.icon:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#exit {
+  margin-right: 10px;
+}
+
+/* aligning everything for every section, thanks myles */
+.fp-tableCell{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* intro/home styling */
+#intro-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 110px;
+  color: #3C3942;
+  margin-top: -100px;
+}
+
+#home-subtitle-typing {
+  font-family: 'IBM Plex Serif', serif;
+  font-style: italic;
+  font-size: 40px;
+  color: #3C3942;
+}
+
+#scroll-arrow {
+  width: 50px;
+  opacity: 0.25;
+  animation: bouncinAround 2.5s infinite;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+}
+
+@keyframes bouncinAround {
+   0%, 100% { transform: translateY(0px); }
+   50% { transform: translateY(-35px); }
+}
+
+/* section styling */
+
+.verticalLine {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 7px;
+  background-color: #FFFFFF;
+}
+
+.year {
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 5%;
+
+  color: #FFFFFF;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 50px;
+  text-align: center;
+
+  border-style: solid;
+  border-width: 7px;
+
+  z-index: 10;
+}
+
+.img-and-blurb {
+  position: absolute;
+  width: 740px;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.img-div {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  z-index: 10;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 7px;
+  margin: 0;
+}
+
+.right {
+  margin-right: 370px;
+}
+
+.left {
+  margin-left: 210px;
+}
+
+.image {
+  width: 320px;
+  z-index: 10;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.blurb {
+  font-family: 'Share', cursive;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.top-right {
+  position: relative;
+  width: 200px;
+  padding: 5px;
+}
+
+.top-left {
+  position: relative;
+  width: 200px;
+  padding: 5px;
+}
+
+#year-pre-2013, #info-pre {
+  background-color: #779CAD;
+}
+
+#year-2014, #info-2014 {
+  background-color: #D39B96;
+}
+
+#year-2015, #info-2015 {
+  background-color: #DCC79D;
+}
+
+#year-2016, #info-2016 {
+  background-color: #A1B7B0;
+}
+
+#year-2017, #info-2017 {
+  background-color: #AABDDB;
+}
+
+#year-2018, #info-2018 {
+  background-color: #D5B6A3;
+}
+
+#year-2019, #info-2019 {
+  background-color: #AAB5BF;
+}
+
+/* lightbox styling */
+.hidden {
+    display: none;
+}
+
+.lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+}
+
+.lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+
+    width: 800px;
+    height: 400px;
+    background-color: #FFFFFF;
+
+    color: #FFFFFF;
+    border-style: solid;
+    border-width: 7px;
+}
+
+.lightbox-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  height: 330px;
+  width: 330px;
+  padding: 35px;
+}
+
+.lightbox-text {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 18px;
+  padding: 35px;
+  padding-left: 0px;
+  width: 60%;
+}
+
+/* about page styling */
+#about {
+  background-color: #333333;
+  width: 100%;
+}
+
+#about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 8%;
+
+  color: #FFFFFF;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 400px;
+}
+
+#about-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-paragraphs {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 18px;
+}
+
+#about-photo {
+  padding-left: 50px;
+}
